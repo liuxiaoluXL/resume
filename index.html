@@ -91,29 +91,29 @@
 			  <div class='column'>
 			    <div class='post-module'>
 			      <div class='thumbnail'>
-			        <img src='images/no3-1.png'>
+			        <img src='images/no3-1.png' width="258px" height="300px">
 			      </div>
 			      <div class='post-content'>
 			        <div class='category'>铁汉生态</div>
 			        <h1 class='title'>基于微信端的项目</h1>
-			        <h2 class='sub_title'>项目经验之一</h2>
+			        <h2 class='sub_title'>项目经验</h2>
 			        <p class='description'>该项目利用HTML5+C3是基于微信公众号开发的2017年校园招聘的微信端项目，主要职责：根据UI图进行前端页面开发</p>
 			      </div>
 			    </div>
 			  </div>
 			  </a>
-			  <a href="http://momeakl.github.io" target="_blank">
+			  <a href="http://qghanshuang.com/" target="_blank">
 			 <div class='column'>
 			    <div class='post-module'>
 			      <div class='thumbnail'>
-			        <img src='images/hello2.jpg'>
+			        <img src='images/4c470a4a0dab3e60b899ba37c5cbcf52.jpg' width="258px" height="300px">
 			      </div>
 			      <div class='post-content'>
-			        <div class='category'>个人博客</div>
-			        <h1 class='title'>基于jekyll的博客</h1>
-			        <h2 class='sub_title'>大四11月份作品。</h2>
-			        <p class='description'>基于jekyll的静态博客系统，发布到了github pages上面，用于自己平时学习心得的记载和分享一些资料</p>
-			       
+			        <div class='category'>门户网站</div>
+			        <h1 class='title'>响应式网站</h1>
+			        <h2 class='sub_title'>项目经验</h2>
+			        <p class='description'>该项目是一个自适应的门户网站，根据ui界面，新增具体的功能模块,高度还原原稿设计图，用CSS3动画增加用户体验。</p>
+
 			      </div>
 			    </div>
 			  </div>
@@ -123,13 +123,13 @@
 					<div class='column'>
 						<div class='post-module'>
 							<div class='thumbnail'>
-								<img src='images/shulan.jpg'>
+								<img src='images/b20232d37466c520067769c6b6991237.jpeg'>
 							</div>
 							<div class='post-content'>
 								<div class='category'>简历</div>
 								<h1 class='title'>个人简历PC版</h1>
-								<h2 class='sub_title'>resome</h2>
-								<p class='description'>利用HTML5+CSS3结合jquery的插件写的个人简历用HTML5+CSS3结合jquery的插件写的个人简历</p>
+								<h2 class='sub_title'>resume</h2>
+								<p class='description'>利用HTML5+CSS3结合jquery的插件写的个人简历,并发布到github上</p>
 							</div>
 						</div>
 					</div>
@@ -205,8 +205,10 @@
 					   <img src="images/call_github_27ab678.png" alt=""/>
 				   </a>
                    <!--<a href="http://www.zhihu.com/people/gao-bing-89" target="_blank">知乎 </a>|-->
-                   <a href="#" target="_blank" title="微信">
+                   <a href="#" target="_blank" title="微信" class="wxf">
 					   <img src="images/call_wx_ac6ac72.png" alt=""/>
+					   <!--<img src="javascript:;" alt="" class="weixin"/>-->
+					   <span id="weixin"></span>
 				   </a>
                    <!--<h1><a href="https://github.com/momeakl/CV"  target="_blank" title="记得给我点个star哟">下载简历</a></h1>-->
                </div>
@@ -233,8 +235,20 @@
 		            height: 'toggle',
 		            opacity: 'toggle'
 		        }, 300);
-		    });
-        });
+		    })
+
+			$(".wxf").on("mouseenter", function () {
+				var $this = $(this);
+				$this.find("span").show();
+
+			}).on("mouseleave", function () {
+				var $this = $(this);
+				$this.find("span").hide();
+			});
+
+        })
+
+
     </script>
 </body>
 </html>

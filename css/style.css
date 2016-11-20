@@ -441,9 +441,11 @@ div.skills{
   background: #000000;
   height: 400px;
   overflow: hidden;
+
 }
 
 .post-module .thumbnail img {
+
   display: block;
   width: 120%;
   -webkit-transition: all 0.3s linear 0s;
@@ -451,13 +453,14 @@ div.skills{
   -ms-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
+
 }
 .post-module .post-content {
   position: absolute;
   bottom: 0;
   background: #ffffff;
   width: 100%;
-  padding: 30px;
+  padding: 35px;
   -webkti-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -688,7 +691,18 @@ div.skills{
     width: 64px;
     height: 64px;
 }
-
+#weixin{
+    display: inline-block;
+    position:absolute;
+    bottom:105px;
+    left:809px;
+    width: 140px;
+    height: 140px;
+    /*background-color: red;*/
+    background: url("../images/mmqrcode1479565401829.png");
+    background-size: 140px 140px;
+    display: none;
+}
 @media only screen and (min-width: 1050px) {
   .cd-section h2 {
     font-size: 4rem;
